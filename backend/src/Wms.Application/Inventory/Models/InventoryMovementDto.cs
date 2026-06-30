@@ -1,0 +1,25 @@
+namespace Wms.Application.Inventory.Models;
+
+public sealed record InventoryMovementDto(
+    Guid Id,
+    Guid ProductId,
+    string ProductSku,
+    string ProductName,
+    decimal Quantity,
+    string MovementType,
+    Guid? SourceLocationId,
+    string? SourceWarehouseCode,
+    string? SourceZoneCode,
+    string? SourceLocationCode,
+    string? SourceLocationName,
+    Guid? DestinationLocationId,
+    string? DestinationWarehouseCode,
+    string? DestinationZoneCode,
+    string? DestinationLocationCode,
+    string? DestinationLocationName,
+    string? ReferenceType,
+    string? ReferenceId,
+    DateTimeOffset PerformedAtUtc,
+    Guid? PerformedByUserId,
+    string? PerformedByUserName,
+    string? Notes);

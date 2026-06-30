@@ -1,0 +1,30 @@
+:root {
+  color-scheme: light;
+  --canvas: #f2eee4;
+  --surface: rgba(255, 253, 247, 0.78);
+  --surface-strong: #fffdf8;
+  --ink: #1d2938;
+  --muted: #596577;
+  --line: rgba(29, 41, 56, 0.14);
+  --accent: #0d766e;
+  --accent-soft: #d5f3ed;
+  --warning: #b7791f;
+  --warning-soft: #fff0c7;
+  --font-sans: "Segoe UI Variable Text", "Aptos", "Trebuchet MS", sans-serif;
+  --font-mono: "Cascadia Code", "Consolas", monospace;
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}

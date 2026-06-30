@@ -1,0 +1,30 @@
+# .NET
+**/bin/
+**/obj/
+**/publish/
+*.dll
+*.exe
+*.pdb
+*.user
+*.suo
+.vs/
+
+# Node / Next.js
+**/node_modules/
+**/.next/
+**/dist/
+**/build/
+**/coverage/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Media / recordings
+*.mp4
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
