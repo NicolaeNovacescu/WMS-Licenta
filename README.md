@@ -187,7 +187,7 @@ npm.cmd --version
 & "C:\Program Files\PostgreSQL\16\bin\psql.exe" --version
 ```
 
-### 1. Deblocarea fisierelor descarcate ca ZIP
+### Deblocarea fisierelor descarcate ca ZIP
 
 Daca proiectul a fost descarcat de pe GitHub ca arhiva ZIP, Windows poate bloca unele fisiere. Din radacina proiectului se ruleaza:
 
@@ -195,7 +195,7 @@ Daca proiectul a fost descarcat de pe GitHub ca arhiva ZIP, Windows poate bloca 
 Get-ChildItem -Recurse -File | Unblock-File
 ```
 
-### 2. Crearea bazei de date PostgreSQL
+### Crearea bazei de date PostgreSQL
 
 Se deschide PowerShell si se ruleaza:
 
@@ -222,7 +222,7 @@ GRANT ALL PRIVILEGES ON DATABASE wms TO wms;
 \q
 ```
 
-### 3. Instalarea dependentelor backend
+### Instalarea dependentelor backend
 
 Din radacina proiectului:
 
@@ -232,7 +232,7 @@ dotnet restore Wms.sln
 dotnet tool restore
 ```
 
-### 4. Aplicarea migrarilor bazei de date
+### Aplicarea migrarilor bazei de date
 
 Din folderul `backend`:
 
@@ -246,7 +246,7 @@ Daca totul este configurat corect, comanda trebuie sa se finalizeze cu mesajul:
 Done.
 ```
 
-### 5. Pornirea backend-ului
+### Pornirea backend-ului
 
 Din folderul `backend`:
 
@@ -260,7 +260,7 @@ Backend-ul trebuie lasat pornit. In terminal trebuie sa apara o linie de forma:
 Now listening on: http://localhost:5080
 ```
 
-### 6. Configurarea frontend-ului
+### Configurarea frontend-ului
 
 Intr-un terminal PowerShell separat, se intra in folderul `frontend`:
 
@@ -276,7 +276,7 @@ Set-Content -Path .env.local -Value "NEXT_PUBLIC_API_BASE_URL=http://localhost:5
 
 Acest fisier indica frontend-ului adresa backend-ului local.
 
-### 7. Instalarea dependentelor frontend
+### Instalarea dependentelor frontend
 
 Din folderul `frontend`:
 
@@ -286,7 +286,7 @@ npm.cmd install
 
 Daca politica PowerShell blocheaza `npm`, se foloseste `npm.cmd`.
 
-### 8. Pornirea frontend-ului
+### Pornirea frontend-ului
 
 Din folderul `frontend`:
 
